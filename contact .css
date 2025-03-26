@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+.premier {
+    ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #6200ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.premier .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.premier ul {
+    display: flex;
+    gap: 30px;
+}
+
+.premier ul li {
+    list-style: none;
+}
+
+.premier ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.premier ul li:hover a {
+    color: #7cf03d;
+}
+
+/* Contact Section Styles */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 600px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+}
+
+.contact-info  {
+    font-size: 40px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.contact-info .cont:hover {
+    color: #7cf03d;
+}
+
+.contact .contact-info  {
+    margin-left: 20px;
+}
+
+.contact .contact-info  a {
+    
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: -5s;
+}
+
+.contact .contact-info a:hover {
+    background: #7cf03d;
+    color: #121212;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .premier {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .premier ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+    .contact-info h3 {
+        font-size: 18px;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-info .cont {
+        font-size: 35px;
+    }
+}

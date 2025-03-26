@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+
+/* Style global */
+body { 
+    background-image: linear-gradient(#f0dbe6, #fcf9fa); 
+    height: 200vh; /* Utilisation de 100vh pour occuper toute la hauteur de la fenêtre */
+    font-weight: bold;
+    letter-spacing: px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrage du contenu */
+} 
+
+* { 
+    margin: 0; 
+    padding: 0; /* Réinitialisation du padding pour tous les éléments */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* Conteneur principal */
+.main { 
+    width: 80%; /* Utilisation d'un pourcentage pour une largeur réactive */
+    max-width: 650px; /* Largeur maximale */
+    display: flex;
+    flex-wrap: wrap; /* Permet de gérer l'adaptation sur petits écrans */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; /* Bordures arrondies pour l'esthétique */
+}
+
+/* Colonne de gauche (image du profil) */
+.left { 
+    background-color: #fbb03b; 
+    width: 200px; 
+    height: 100%; /* Assure que la hauteur occupe toute la colonne */
+    border-top-let-radius: 10px; 
+    border-bottomleft-radius: 10px; 
+    dispay: flex;
+    justify-ontent: center;
+    align-ites: center; /* Centrage du contenu */
+}
+
+/* Colonne de droite (contenu) */
+.right { 
+    flex: 1; /* Utilisation de Flexbox pour occuper l'espace restant */
+    padding: 0px;
+    display: lex;
+    flex-direction: olumn;
+    position: right;
+}
+
+/* Image du profil */
+.profile-img { 
+    height: 180px; 
+    width: 180px; 
+    background-color: #ddd; 
+    border-radius: 50%; 
+    margin: 20px auto; /* Centré automatiquement */
+    border: 10px solid #fbb03b; 
+    box-shadow: 6px 7px 9px 5px rgba(251, 176, 59, 0.45); /* Ombre plus douce */
+}
+
+/* Image à l'intérieur du cercle */
+.profile-img img { 
+    width: 100%; 
+    border-radius: 50%; 
+}
+
+/* Section de titre */
+.heading { 
+    background-color: #4d4d4d; 
+    padding: 10px;
+    color: #fbb03b; 
+    text-align: left; 
+    padding-left: 20px; 
+    position: relative; 
+}
+
+/* Ajout d'un petit élément visuel après le titre */
+.heading::after { 
+    content: ''; 
+    position: absolute; 
+    width: 21px; 
+    height: 18px; 
+    background-color: #5a5959; 
+    left: 191px; 
+    top: 26px; 
+}
+
+/* Texte sous le titre */
+.p1 { 
+    padding: 9px 10px; 
+    font-size: 11px; 
+}
+
+/* Section des compétences */
+.skill-container { 
+    width: 90%; 
+    background-color: #4d4d4d; 
+    margin: 10px 0;
+    border-radius: 5px; /* Bordures arrondies */
+}
+
+/* Barre de compétences */
+.skill { 
+    text-align: right; 
+    padding: 5px 0; 
+    color: white; 
+    font-size: 12px;
+}
+
+/* Compétences avec des couleurs spécifiques */
+.html { 
+    background-color: #fafaf9;
+    width: 90%; 
+}
+.css { 
+    background-color: #fcfafa;
+    width: 60%; 
+}
+.js { 
+    background-color: #f4f4f7;
+    width: 10%; 
+}
+.web { 
+    background-color: #f8fdf9;
+    width: 70%; 
+}
+.graphic { 
+    background-color: #fdf9fd;
+    width: 70%; 
+}
+
+/* Icones dans les compétences */
+.icons1 { 
+    font-size: 16px !important; 
+    padding-right: 10px !important; 
+    vertical-align: sub; 
+}
+
+/* Section du nom */
+.name-div { 
+    padding: 40px 0; 
+    text-align: center; 
+    letter-spacing: 3px; 
+}
+
+.name-div h1 { 
+    margin: 10px 0; /* Espacement entre le nom et le reste */
+}
+
+/* Section de texte descriptif */
+.box-2 { 
+    padding: 0px 50px; 
+    margin-top: 30px; 
+}
+
+.p2 { 
+    font-size: 12px; /* Légèrement plus grand pour une meilleure lisibilité */
+    font-weight: 300; 
+    letter-spacing: 1px; 
+    word-spacing: 2px; 
+    line-height: 18px; 
+    margin-top: 5px; 
+}
